@@ -1,0 +1,19 @@
+//Biblioteca
+#include <stdio.h>
+#include <locale.h>
+int main (){
+    setlocale (LC_ALL,"");
+    int máscara, pessoas, mp, sobra; //mp= máscara por pessoas
+    //Solicitar dados
+    printf ("Informe a quantidade de máscaras:\n");
+    scanf ("%d",&máscara);
+    printf ("Informe a quantidade de foliões:\n");
+    scanf ("%d",&pessoas);
+    //Processamento
+    mp = máscara / pessoas;
+    sobra = máscara % pessoas;
+    //Imprimir
+    printf ("O bloquinho 'Pausa pro Café'conseguirá distribuir %d máscaras por pessoa e sobrarão %d máscaras",mp,sobra);
+    //Fim
+    return 0;
+}

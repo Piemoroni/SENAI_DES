@@ -1,0 +1,20 @@
+//Biblioteca
+#include <stdio.h>
+#include <locale.h>
+int main (){
+    setlocale (LC_ALL,""); //Localização
+    float tecido, LED, linha, Fantasia;
+    //Solicitar dados
+    printf ("Informe o valor do tecido binário:\n");
+    scanf ("%f",&tecido);
+    printf ("Informe o valor do led colorido:\n");
+    scanf ("%f",&LED);
+    printf ("Informe o valor da linha algorítmica:\n");
+    scanf ("%f",&linha);
+    //Processamento
+    Fantasia = tecido + LED + linha;
+    //Imprimir
+    printf ("A fantasia da escola 'Byte a Byte' é de: %2.f reais",Fantasia);
+    //Fim
+    return 0;
+}

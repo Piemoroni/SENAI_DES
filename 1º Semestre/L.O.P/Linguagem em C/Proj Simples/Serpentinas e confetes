@@ -1,0 +1,18 @@
+//Biblioteca
+#include <stdio.h>
+#include <locale.h>
+//Inicio
+int main (){
+    setlocale (LC_ALL,""); //Localização
+    int distância, confetes, serpentinas;
+    //Solicitar os dados
+    printf ("Informe a quantidade de quilometros percorridos:\n");
+    scanf ("%d",&distância);
+    //Processamento
+    confetes = distância * 500;
+    serpentinas = distância * 200;
+    //Imprimir
+    printf ("O 'Unidos do java' percorrerá %d Km no desfile e precisará de %d confetes e %d serprentinas", distância, confetes, serpentinas);
+    //Fim
+    return 0;
+}

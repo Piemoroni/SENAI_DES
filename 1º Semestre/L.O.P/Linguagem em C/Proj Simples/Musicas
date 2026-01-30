@@ -1,0 +1,30 @@
+//Biblioteca
+#include <stdio.h>
+#include <locale.h>
+int main (){
+    setlocale (LC_ALL,"");
+    int ddesfile, tmusica, tpropa, ttransicao, tdispo, maxmusicas, tutili, tsobra, conversão;
+    //Solicitar dados
+    printf ("Digite a duração total do desfile (em minutos):\n");
+    scanf ("%d",&ddesfile);
+    printf ("Digite o tempo médio de cada música (em minutos):\n");
+    scanf ("%d",&tmusica);
+    printf ("Digite o tempo total reservado para propagandas e interações (em minutos):\n");
+    scanf ("%d",&tpropa);
+    printf ("Digite o tempo médio reservado para transição entre as músicas (em segundos):\n");
+    scanf ("%d",&ttransicao);
+    //Processamento
+    //Converter tempo de transição para minutos
+    conversão = ttransicao / 60.0;
+    //Calcular tempo disponível para músicas
+    tdispo = ddesfile - tpropa;
+    //Calcular o número máximo de músicas que cabem no tempo disponível
+    maxmusicas = tdispo / ( tmusica + conversão);
+    //Calcular o tempo restante
+    tutili = maxmusicas * ( tmusica + conversão);
+    tsobra = tdispo - tutili;
+    //Imprimir
+    printf ("A quantidade máxima que pode ser tocadas é de: %d músicas e o tempo que sobrará no final do desfile é de: %d minutos",maxmusicas,tsobra);
+    //Fim
+    return 0;
+}

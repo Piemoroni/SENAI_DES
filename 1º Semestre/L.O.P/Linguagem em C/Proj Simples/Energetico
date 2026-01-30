@@ -1,0 +1,19 @@
+//Biblioteca
+#include <stdio.h>
+#include <locale.h>
+int main (){
+    setlocale (LC_ALL,"");
+    int pessoas;
+    float ml, total;
+    //Soliciar dados
+    printf ("Digite o número de pessoas no bloco Overflow:\n");
+    scanf ("%d",&pessoas);
+    printf ("Digite a quantidade média de energético por pessoa (em ml):\n");
+    scanf ("%f",&ml);
+    //Processamento
+    total = ( pessoas * ml ) / 1000.0;
+    //Imprimir
+    printf ("Quantidade total de energético necessária:%.2f litros",total);
+    //Fim
+    return 0;
+}

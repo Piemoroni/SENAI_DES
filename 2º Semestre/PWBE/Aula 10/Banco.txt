@@ -1,0 +1,35 @@
+Banco: 
+
+-Consultas (id, id_paciente, id_medico, data, hora. status)
+
+-Pacientes (id, nome, telefone, data_nascimento, cpf, email)
+
+-Medicos (id, nome, email, data_nascimento, especialidade)
+
+-Funcionários (id, nome, email, data nascimento, cargo)
+
+
+-ADM:
+~Acessar relatórios  
+-Médicos: 
+~Listar dados dos pacientes deles
+
+
+-Funcionários:
+ADM: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwibmFtZSI6IkxldMOtY2lhIERvZmYiLCJlbWFpbCI6ImxldGljaWEuY29tIiwiY2FyZ28iOiJBRE0iLCJpYXQiOjE3NjI1MjUzNzUsImV4cCI6MTc2MjUyODk3NX0.I7F2kR8a03N0lBoGv_mylSUM2TsElaGV_kPdSdD6dUU
+
+Atendente: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6IkFtYW5kYSBMYXphcmluaSIsImVtYWlsIjoiYW1hbmRhLmNvbSIsImNhcmdvIjoiQVRFTkRFTlRFIiwiaWF0IjoxNzYyNTI1NDAwLCJleHAiOjE3NjI1MjkwMDB9.h38bNmujQf7NDZj7gedu21SDaPhRnJpOyw6qKunYjRA
+
+Médico(3):
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6IlBpZXRyYSBNb3JvbmkiLCJlbWFpbCI6InBpZXRyYS5jb20iLCJjYXJnbyI6IlBFRElBVFJBIiwiaWF0IjoxNzYyNTI1NDM0LCJleHAiOjE3NjI1MjkwMzR9.bERACM4Kc99hw8PZWVxUkMtp1U7uduMvcwYVz-GSQSU
+
+médico(4):
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwibmFtZSI6IkFsaWNlIENvc3RhIiwiZW1haWwiOiJhbGljZS5jb20iLCJjYXJnbyI6Ik5FVVJPTE9HSVNUQSIsImlhdCI6MTc2MjUyNTQ3NywiZXhwIjoxNzYyNTI5MDc3fQ.jUXd2FZUDOI5xlMyfy1nkwERo2X0XTJdT9FtWA1EaOE
+
+médico(7):
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywibmFtZSI6Ik5hdGFsaWEgTWFyYW5nb25pIiwiZW1haWwiOiJuYXRhbGlhLmNvbSIsImNhcmdvIjoiTkVVUk9MT0dJU1RBIiwiaWF0IjoxNzYyNTI1NTE4LCJleHAiOjE3NjI1MjkxMTh9.H_c9blU5mkR2AT82BBFtQYYU97YK38xaXSR3kHsOUs4
+
+-Pacientes:
+Murilo(2)
+
+ 

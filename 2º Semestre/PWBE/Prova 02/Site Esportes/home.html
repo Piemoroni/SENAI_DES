@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locações Esportivas - SESI </title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<header>
+    <h1> Locações Esportivas - SESI <i class="fa-solid fa-person-walking fa-flip" style="color: #ffffff;"></i> </h1>
+    <h3> Pratique Esportes!!!</h3>
+    <img src = "https://upload.wikimedia.org/wikipedia/commons/2/20/Logo_SESI_vermelho.jpg" alt = "Logo SESI" class="img">
+</header>
+<body>
+    <div class="conteiner">
+        <nav id="menu-lateral">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href = "home.html"> Equipamentos </a></li>
+                <li><a href = "home2.html"> Alunos </a></li>
+                <li><a href = "home3.html"> Locações </a></li>
+            </ul>
+        </nav>
+        <div class="novaConta">
+            <h1> Insira um Equipamento: </h1>
+            <p>
+                <label for="Nome"> Nome: </label>
+                <input type="text" id="nome" placeholder="Insira o nome" required />
+                <br>
+            </p>
+            <p>
+                <label for="categoria"> Categoria: </label>
+                <input type="text" id="categoria" placeholder="Insira a Categoria" required />
+                <br>
+            </p>
+            <p>
+                <label for="quantidade"> Quantidade: </label>
+                <input type="text" id="quantidade" placeholder="Insira a Quantidade" required />
+            </p>
+            <br>
+            <div class = "botaonovaConta">
+                <button onclick="Confirmar()"> Confirmar </button>
+                <script>
+                    function Confirmar() {
+                        alert("Equipamento Cadastrado!")
+                    }
+                </script>
+                <br>
+            </div>
+        </div>
+        <main>
+            <div class="tabela-conteiner">
+                <div class="info">
+                    <h2>Equipamentos Registrados</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nome</th>
+                                <th>Categoria</th>
+                                <th>Quantidade em Estoque</th>
+                                <th>Quantidade de Locações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="dados">
+                                <td class="id">1</td>
+                                <td class="nome"> Bola </td>
+                                <td class="categoria"> Vôlei </td>
+                                <td class="quantidadeEstoque"> 5 </td>
+                                <td class="quantidadeLoc"> 10</td>
+                            </tr>
+                            <tr id = "dado">
+                                <td class = "id"> 2 </td>
+                                <td class="nome"> Mini Gol </td>
+                                <td class="categoria"> Futebol/Futsal </td>
+                                <td class="quantidadeEstoque"> 10 </td>
+                                <td class="quantidadeLoc"> 20 </td>
+                            </tr>
+                            <tr id = "dados">
+                                <td class = "id"> 3 </td>
+                                <td class="nome"> Rede </td>
+                                <td class="categoria"> Vôlei </td>
+                                <td class="quantidadeEstoque"> 2 </td>
+                                <td class="quantidadeLoc"> 25 </td>
+                            </tr>
+                            <tr id = "dado">
+                                <td class = "id"> 4 </td>
+                                <td class="nome"> Bola </td>
+                                <td class="categoria"> Futebo/Futsal </td>
+                                <td class="quantidadeEstoque"> 8 </td>
+                                <td class="quantidadeLoc"> 30 </td>
+                            </tr>
+                            <tr id = "dados">
+                                <td class = "id"> 5 </td>
+                                <td class="nome"> Luvas </td>
+                                <td class="categoria"> Box </td>
+                                <td class="quantidadeEstoque"> 4 Pares </td>
+                                <td class="quantidadeLoc"> 6 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p> Made With <i class="fa-solid fa-heart fa-beat" style="color: #d02525;"></i> By Pietra Moroni</p>
+    </footer>
+</body>
+</html>

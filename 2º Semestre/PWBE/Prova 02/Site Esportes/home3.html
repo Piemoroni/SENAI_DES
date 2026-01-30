@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locações Esportivas - SESI</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<header>
+    <h1> Locações Esportivas - SESI <i class="fa-solid fa-person-walking fa-flip" style="color: #ffffff;"></i>  </h1>
+    <h3> Pratique Esportes!!!</h3>
+    <img src = "https://upload.wikimedia.org/wikipedia/commons/2/20/Logo_SESI_vermelho.jpg" alt = "Logo SESI" class="img">
+</header>
+<body>
+    <div class="conteiner">
+        <nav id="menu-lateral">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href = "home.html"> Equipamentos </a></li>
+                <li><a href = "home2.html"> Alunos </a></li>
+                <li><a href = "home3.html"> Locações </a></li>
+            </ul>
+        </nav>
+        <div class="novaConta">
+            <h1> Insira uma Locação: </h1>
+            <p>
+                <label for="data"> Locação: </label>
+                <input type="text" id="data" placeholder="Insira a Data de Locação" required />
+                <br>
+            </p>
+            <p>
+                <label for="dataD"> Devolução: </label>
+                <input type="text" id="dataD" placeholder="Insira a Data de Devolução" required />
+                <br>
+            </p>
+            <p>
+                <label for="nome"> Aluno: </label>
+                <input type="text" id="nome" placeholder="Insira o Nome" required />
+                <br>
+            </p>
+            <p>
+                <label for="nomeE">Equipamento: </label>
+                <input type="text" id="nomeE" placeholder="Insira o Nome" required />
+                <br>
+            </p>
+            <br>
+            <div class = "botaonovaConta">
+                <button onclick="Confirmar()"> Confirmar </button>
+                <script>
+                    function Confirmar() {
+                        alert("Locação Cadastrada!")
+                    }
+                </script>
+                <br>
+            </div>
+        </div>
+        <main>
+            <div class="tabela-conteiner">
+                <div class="info">
+                    <h2>Locações Registradas</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Data Locação</th>
+                                <th>Data Devolução</th>
+                                <th>Aluno</th>
+                                <th>Equipamento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="dados">
+                                <td class="id"> 1   </td>
+                                <td class="locacao"> 2025-11-28 </td>
+                                <td class="devolucao"> 2025-12-10 </td>
+                                <td class="aluno"> Pietra Moroni </td>
+                                <td class="equipamento"> Mini Gol </td>
+                            </tr>
+                            <tr id="dados">
+                                <td class="id"> 2  </td>
+                                <td class="locacao"> 2025-11-30 </td>
+                                <td class="devolucao"> 2025-12-15 </td>
+                                <td class="aluno"> Reenye Lima </td>
+                                <td class="equipamento"> Rede de Vôlei </td>
+                            </tr>
+                            <tr id="dados">
+                                <td class="id"> 3  </td>
+                                <td class="locacao"> 2025-11-24 </td>
+                                <td class="devolucao"> 2025-11-28 </td>
+                                <td class="aluno"> Pedro Antonio Moroni </td>
+                                <td class="equipamento"> Bola de Futebol/Futsal </td>
+                            </tr>
+                            <tr id="dados">
+                                <td class="id"> 4   </td>
+                                <td class="locacao"> 2025-10-28 </td>
+                                <td class="devolucao"> 2025-11-16 </td>
+                                <td class="aluno">João Lucas Ribeiro Leite </td>
+                                <td class="equipamento"> Bola de vôlei </td>
+                            </tr>
+                            <tr id="dados">
+                                <td class="id"> 5  </td>
+                                <td class="locacao"> 2025-09-15 </td>
+                                <td class="devolucao"> 2025-09-20 </td>
+                                <td class="aluno">Robson Souza </td>
+                                <td class="equipamento"> Luva de Box </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p> Made With <i class="fa-solid fa-heart fa-beat" style="color: #d02525;"></i> By Pietra Moroni</p>
+    </footer>
+</body>
+</html>

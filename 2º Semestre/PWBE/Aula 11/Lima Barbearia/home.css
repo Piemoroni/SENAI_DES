@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", Helvetica, sans-serif;
+}
+
+body { 
+    width: 100vw;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    background-color: #fefbdf00;
+}
+
+header{
+    background-color: rgb(122, 38, 38);
+    color:rgb(254, 253, 253);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 8px 16px #9d040461;
+}
+
+.img{
+    align-content: center;
+    width: 150px;
+    height: 100;
+}
+
+.conteiner {
+    display: flex;
+    width: 100vw;
+}
+
+nav {
+    width: 150px;
+    height: 90vh;
+    background-color: rgb(122, 38, 38);
+    border-top: 4px solid rgb(254, 253, 253);
+}
+
+nav ul li {
+    width: 150px;
+    padding: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(254, 253, 253);
+}
+
+nav ul li a:hover {
+    background-color: rgb(254, 253, 253);
+    color: rgb(122, 38, 38);
+}
+
+.tabela-conteiner {
+    width: 800px;
+    height: 350px;
+    background: rgb(122, 38, 38);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px #9d040461;
+    transition: transform 0.3 ease;
+}
+
+.tabela-conteiner h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(254, 253, 253);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #641818f5;
+    color: rgb(254, 253, 253);
+}
+
+thead {
+    padding: 30px;
+    text-align: left;
+    font-size: 16px;
+}
+
+tbody{
+    background-color: #f9a9a9f4;
+    color: #01000b;    
+}
+
+tbody td {
+    padding: 12px 14px;
+    font-size: 15px;
+}
+
+button{
+    background-color: rgb(122, 38, 38);
+    color: rgb(254, 253, 253);
+    height: 50px;
+    width: 80px;
+    border-radius: 5px;
+    align-items: center,;
+}
+
+main {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-lateral {
+    width: 15%;
+}

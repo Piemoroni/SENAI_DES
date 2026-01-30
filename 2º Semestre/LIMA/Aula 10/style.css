@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Gravitas+One&family=Indie+Flower&family=Libre+Barcode+39+Text&family=Pacifico&family=Playwrite+DE+SAS:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #fff0fc;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #fac6ef;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px;
+}
+
+header i {
+    color: #C71585;
+    display: none !important;
+}
+
+ul {
+    list-style: none;
+}
+
+header ul li {
+    color: #C71585;
+    display: inline;
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    width: 200px;
+    height: 90vh;
+    background-color: #C71585;
+    border-top: 3px solid #C71585;
+}
+
+nav ul li {
+    width: 200px;
+    padding: 15px;
+    color: #fac6ef;
+    cursor: pointer;
+    transition: .2s;
+}
+
+nav ul li:hover {
+    background-color: #fac6ef;
+    color: #C71585;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 15px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+main .box {
+    width: 300px;
+    height: 550px;
+    background-color: #fac6ef;
+    border-radius: 10px;
+}
+
+.box img{
+    width: 100%;
+    max-height: 80%;
+    border-radius: 10px 10px 0 0;
+}
+
+.box .info {
+    width: 100%;
+    max-height: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.info button {
+    width: 80%;
+    align-self: center;
+    background-color: #e7abd9;
+    color: #C71585;
+    font-weight: bold;
+    border: none;
+    padding: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info button:hover {
+    background-color: #C71585;
+    color: #e7abd9;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (max-width: 700px) {
+    header ul {
+        display: none;
+    }
+    header i {
+        display: block !important;
+    }
+    .container nav {
+        position: absolute;
+        top: 0;
+        left: -200px;
+        height: 100vh;
+    }
+}
+
+

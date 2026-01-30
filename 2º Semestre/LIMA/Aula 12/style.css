@@ -1,0 +1,85 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  color: #3c0030;
+  background: linear-gradient(180deg, #f4cde8, #f3a8e1);
+}
+
+header {
+  background: #ee5db9;
+  color: #f8e7f2;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #ffeaf5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #a73585;
+  text-decoration: none;
+}
+
+section {
+  padding: 2.5rem;
+  margin: 3rem auto;
+  width: 85%;
+  background: #fdedf5;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #f064bf;
+  font-size: 26px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+h3 {
+  color: #a83b7c;
+  margin-top: 1.5rem;
+  font-size: 20px;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+.formula {
+  background: #fbd6e8;
+  padding: 8px 12px;
+  display: inline-block;
+  font-weight: bold;
+  color: #7a0058;
+  margin: 6px 0;
+}
+
+.imagem{
+  display: block;
+  width: 250px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

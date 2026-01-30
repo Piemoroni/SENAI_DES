@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    background-color:#fefbdf00;
+}
+
+header{
+    background-color: rgb(122, 38, 38);
+    color:rgb(254, 253, 253);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 8px 16px #9d040461;
+}
+
+.img{
+    align-content: center;
+    width: 150px;
+    height: 100;
+}
+
+.cadastro  {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.cadastro .novaConta{
+    padding: 2rem;
+    margin: 1rem;
+    background: rgb(122, 38, 38);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    height: 350px;
+    width: 450px ;
+}
+
+.cadastro .novaConta h1{
+    color: #fdfcfb;
+    text-align: center;
+}
+
+.cadastro .novaConta {
+    color: rgb(255, 255, 255);
+}
+
+.botaonovaConta{
+    text-align: center;
+    text-decoration: none;
+    place-items: center;
+    align-self: center;
+    justify-content: center;
+    color: rgb(122, 38, 38);
+     margin: 10px;
+}
+
+.botaonovaConta a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(122, 38, 38);
+}
+
+.botaonovaConta:hover{
+    color: rgb(122, 38, 38);
+}
+
+button{
+    width: 200px;
+    height: 20px;
+    background-color: rgb(226, 167, 167);
+    color: rgb(122, 38, 38);
+}
+
+.limpar{
+    width: 200px;
+    height: 20px;
+    background-color: rgb(226, 167, 167);
+    color: rgb(122, 38, 38);
+}
+
+footer{
+    background: #fdfcfb;
+    color: rgb(122, 38, 38);
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+}

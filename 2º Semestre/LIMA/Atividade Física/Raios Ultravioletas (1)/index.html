@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raios Ultravioletas</title>
+     <link rel = "stylesheet" href = "style.css">
+</head>
+<header>
+    <h1>Raios Ultravioletas</h1>
+    <nav>
+            <ul>
+                <li> <a href="#definiçao">Definição</a></li>
+                <li> <a href="#Descoberta">Descoberta</a></li>
+                <li> <a href="biografia.html">Biografia</a></li>
+                <li> <a href="caracteristicas.html">Características</a></li>
+                <li> <a href="curiosidades.html">Curiosidades</a></li>
+                <li> <a href="aplicaçoes.html">Aplicações</a></li>
+
+               
+            </ul>
+        </nav>
+</header>
+<body>
+    <section id = "definiçao">
+    <div class = "conteiner">
+        <h2>Definição dos Raios Ultravioletas</h2> 
+        <p>Os raios ultravioleta são um tipo de radiação eletromagnética emitida principalmente pelo Sol. Eles possuem um comprimento de onda menor que o da luz visível e maior que o dos raios X, por isso não podem ser vistos a olho nu. Apesar de invisíveis, têm alta energia e podem causar diversas reações químicas e biológicas.</p>
+        <p>Esses raios são importantes porque ajudam o corpo humano a produzir vitamina D, essencial para a saúde dos ossos. No entanto, a exposição excessiva pode causar danos, como queimaduras solares, envelhecimento precoce da pele e até câncer de pele.</p>
+    </div>
+</section>
+
+<section id="Descoberta">
+    <div class="conteiner">
+        <h2>Descoberta</h2>
+        <p>A descoberta dos raios ultravioleta aconteceu no início do século XIX, mais precisamente em 1801, pelo físico alemão Johann Wilhelm Ritter.
+
+Ritter estava realizando experimentos com luz solar e sais de prata, que escureciam quando expostos à luz. Ele sabia que a luz visível era composta por várias cores e queria investigar o que acontecia além da cor violeta, na parte invisível do espectro.
+</p>
+<p>Durante os experimentos, Ritter percebeu que os sais de prata escureciam ainda mais rapidamente quando colocados logo depois da faixa violeta da luz visível, onde o olho humano já não via luz alguma. Isso mostrou que existia ali uma radiação invisível, mais energética que a luz violeta.
+
+Por causa dessa posição “além do violeta”, ele chamou essa radiação de raios ultravioleta (“ultra” significa “além de”). Essa descoberta foi um passo importante para o estudo da luz e da radiação, e mais tarde ajudou os cientistas a compreender melhor os efeitos da radiação solar sobre os seres vivos e o ambiente.</p>
+    </div>
+</section>
+
+<div class="lanterna-uv-container">
+  <div class="lanterna-uv">
+    <div class="head">
+      <div class="lens" id="lens"></div>
+    </div>
+
+    <div class="body">
+      <div class="brand">LANTERNA UV</div>
+      <div class="button" id="btn-lanterna" role="button" tabindex="0" aria-pressed="false"></div>
+    </div>
+
+    <div class="beam" id="beam" aria-hidden="true"></div>
+  </div>
+
+  <div class="floor" aria-hidden="true"></div>
+
+  <div class="controle-luz">
+    <label for="intensidade">Intensidade da Luz:</label>
+    <input type="range" id="intensidade" min="0" max="100" value="60" />
+  </div>
+
+  <div class="mensagem-container">
+    <p class="mensagem-uv">
+      Alice Rodrigues, Letícia Doff, 
+      Murilo Chiarello, Natalia Marangoni e Pietra Moroni
+    </p>
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,67 @@
+//Criar SQL com base em um DER
+//Exercício 1:
+Professores = id (chave primaria), nome, email e telefone;
+Disciplinas = id (chave primaria), nome, professor_id (chave estrangeira);
+turmas = id (chave primaria),periodo, nome
+
+Professores - Ministram - Disciplinas (1:N)
+Disciplinas - possui - Turmas (1:N) //// turma_id, disciplinas
+
+
+
+//Exercício 2:
+Clientes: id (chave primaria), nome, cpf;
+Contratos: id (chave primaria), cliente_id (chave estrangeira), veiculo_id (chave estrangeira), data_inicio, data fim, valor;
+Veiculos: id (chave primaria), modelo, placa, categoria;
+Manutenções: id (chave primaria), veiculo_id (chave estrangeira), tipo, data, observações;
+
+Clientes - possui - Contratos (1:N)
+Contratos - pertence - Veiculos (1:1)
+Veiculos - possui - Manutenções (1:N)
+
+
+
+//Exercício 3:
+Usuarios: id (chave primaria), nome, email;
+Playlist: id (chave primaria), usuario_id (chave secundaria), nome;
+Musicas: id (chave primaria), titulo, artista, duracao;
+Usuarios - possui - Playlist (1:N)
+Playlist - playlis_musica - Musica (1:N) //// ordem, id (chave primaria), playlist_id (chave estrangeira), musica_id (chave estrangeira)
+
+
+
+
+
+//Criar um DER com base em um script SQL
+//Exercício 1:
+Pacientes: id (chave primaria), nome, nascimento;
+Consultas: id (chave primaria), paciente_id (chave estrangeira), data consulta, valor;
+
+Pacientes - realizam - Consultas (1:N)
+Consultas - relacionada - Pacientes (N:1)
+
+
+
+//Exercício 2:
+Artistas: id (chave primaria), nome;
+Álbuns: id (chave primaria), titulo, artista_id (chave estrangeira);
+Faixas: id (chave primaria), titulo, duração, album_id (chave estrangeira);
+Artistas - Possui - Album (1:N)
+Album - Possui - Faixas (1:N)
+
+
+//Exercício 3:
+Usuários: id (chave primaria), nome;
+Cursos: id (chave primaria), titulo;
+Aulas: id (chave primaria), curso_id (chave estrangeira), titulo;
+Progresso: id (chave primaria), usuario_id (chave estrangeira), aula_id (chave estrangeira), status, data conclusão;
+
+
+
+
+
+
+
+
+
+

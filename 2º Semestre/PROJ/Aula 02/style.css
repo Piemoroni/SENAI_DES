@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background: linear-gradient(#FFF0F5, #f4b3c9 , #e6749a  );
+  font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: rgb(226, 111, 174);
+    color:rgb(134, 62, 99);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 8px 16px #7e0652ae;
+}
+
+.cadastro  {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.cadastro .novaConta{
+    padding: 2rem;
+    margin: 1rem;
+    background: rgba(232, 86, 23, 0.637);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    height: 350px;
+    width: 450px ;
+}
+
+.cadastro .novaConta h1{
+    color: #b4510b;
+    text-align: center;
+}
+
+.cadastro .novaConta {
+    color: rgb(180, 65, 15);
+}
+
+.cadastro .novaConta .botaonovaConta button{
+    text-align: center;
+    text-decoration: none;
+    place-items: center;
+}
+

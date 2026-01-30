@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Projeto Mãos Amigas </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1> Projeto Mãos Amigas </h1>
+        <h3> "Unidos pela coragem, vencemos o silêncio e espalhamos o respeito. Juntos, somos a mudança!" </h3>
+        <nav> 
+            <ul> 
+                <li> <a href = "#cadastro" > Área de Cadastro </a></li>
+                <li> <a href = "#avisos"> Área de Avisos </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <div class = imagem>
+     <img src = "faixas.jpg">
+</div>
+    
+
+  <fieldset>
+    <section id = "cadastro" >
+    <legend> Área de cadastro </legend>
+    <p>
+      <label for="nome"> Nome: </label>
+      <input id="nome" type="text" placeholder= "Insira Seu Nome" required>
+    </p>
+    <p>
+      <label for="turma"> Turma SESI: </label>
+      <input id="turma" type="text" placeholder= "Insira Sua turma" required>
+    </p>
+    <p>
+      <label for="unidade"> Unidade SESI: </label>
+      <input id="unidade" type="text" placeholder= "Insira Sua unidade sesi" required>
+    </p>
+    <p>
+      <label for="email"> E-mail institucional:</label>
+      <input id="email" type="email" placeholder= "insira seu email" required>
+    </p>
+    <p>
+      <h4>Você é:</h4>
+      <input type="radio" id="aluno" name="tipo">
+      <label for="aluno">Aluno</label>
+      <input type="radio" id="responsavel" name="tipo">
+      <label for="responsavel">Responsável</label>
+      <input type="radio" id="diretor" name="tipo">
+      <label for="diretor">Diretor(a)</label>
+      <input type="radio" id="coordenador" name="tipo">
+      <label for="coordenacao">Coordenação</label>
+    </p>
+    <p>
+        <label for = "info"> Nos dê sua opinião sobre o site! </label>
+        <textarea id = "info" > </textarea>
+    </p>
+    <p>
+        <input type = "reset" value = " Limpar Form" />
+        <button onclick = "enviar()" > Enviar </button>
+        <script>
+        function enviar(){
+            alert("Dados Enviados com Sucesso")
+        }
+        </script>
+        </p>
+  </fieldset>
+  </section>
+
+
+  <fieldset>
+    <section id = "avisos">
+    <legend> Área de Avisos do Sesi CE 356 </legend>
+    <div class = "cartao">
+        <img src = "https://us.123rf.com/450wm/bialasiewicz/bialasiewicz1607/bialasiewicz160700404/59289912-professor-acad%C3%AAmico-explicando-algo-para-seus-alunos-usando-um-gr%C3%A1fico-de-barras-exibido-em-uma.jpg?ver=6" alt = "Imagem 1">
+        <h3> Palestra sobre os danos físicos e mentais do bullying</h3>
+        <p> Feita por: Equipe Mãos Amigas e Reenye Lima </p>
+        <p> A palestra sobre bullying destacou os efeitos negativos na saúde física e mental. É fundamental sermos solidários e apoiarmos as vítimas, denunciando o bullying quando o vemos, para criar um ambiente mais seguro e respeitoso, onde todos possam se sentir valorizados e felizes. </p>
+    </div>
+    <div class = "cartao">
+        <img src = "https://png.pngtree.com/png-clipart/20250110/original/pngtree-anti-bullying-poster-template-png-image_6958051.png" alt = "Imagem 2">
+        <h3> Cartazes Antibullying Espalhados pela Escola</h3>
+        <p> Feito por: Diretora Andrea e Coordenadoras Simone e Raquel, em conjunto com a Equipe Mãos Amigas</p>
+        <br> 
+        <p> Cartazes antibullying foram espalhados pela escola, promovendo conscientização e apoio. Liderados pela Diretora Andrea, Coordenadoras Simone e Raquel, e a Equipe Mãos Amigas, o objetivo é criar um ambiente seguro, acolhedor e respeitoso, incentivando empatia e solidariedade. </p>
+    </div>
+    <div class = "cartao">
+        <img src = "https://img.freepik.com/fotos-premium/imagem-vertical-do-professor-conversando-com-os-alunos-e-fazendo-perguntas-a-eles-em-uma-palestra-na-universidade_236854-49362.jpg" alt = "Imagem 3">
+        <h3> Palestra sobre os tipos de bullying e como reconhece-los </h3>
+        <p> Feito por: Equipe Projeto Mãos amigas e Robson Souza</p>
+        <p>A palestra sobre bullying destacou os diferentes tipos e como reconhecê-los, para criar um ambiente mais seguro e apoiar as vítimas. Com essa conscientização, podemos trabalhar juntos para prevenir o bullying e promover uma cultura de respeito e empatia, onde todos se sintam valorizados e seguros. </p>
+    </div>
+    <div class = "cartao">
+        <img src = "https://i.pinimg.com/736x/c0/be/fd/c0befd71ee82799d3cf4f2c3f21d4485.jpg" alt = "Imagem 4">
+        <h3> Cartazes Antibullying Entregue para Cada Aluno </h3>
+        <p> Feito Por: Equipe do Projeto Antibullying da Escola Sesi CE 365, em conjunto com a Equipe Mãos Amigas </p>
+        <br>
+        <p> Cartazes antibullying foram entregues a cada aluno, promovendo conscientização e apoio. A iniciativa foi realizada pela Equipe do Projeto Antibullying da Escola Sesi CE 365, em parceria com a Equipe Mãos Amigas, que trabalham juntas para criar um ambiente escolar mais seguro e respeitoso. </p>
+    </div>
+  </fieldset>
+  </section>
+
+
+</body>

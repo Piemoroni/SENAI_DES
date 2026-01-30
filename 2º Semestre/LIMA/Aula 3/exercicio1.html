@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercício 1</title>
+</head>
+<body>
+    <h1> Formulário </h1>
+
+<form action = "" method = "">
+
+    <fieldset>
+        <legend> Dados Pessoais </legend>
+        <p>
+            <label for = "nome" > Nome: </label>
+            <input id = "nome" type = "text" placeholder= "Insira Seu Nome" required />
+        </p>
+        <p>
+            <label for = "end" > Endereço: </label>
+            <input id = "end" type = "text" placeholder= "Insira Seu Endereço" required />
+        </p>
+        <p>
+            <label for = "cid" > Cidade: </label>
+            <input id = "cid" type = "text" placeholder= "Insira Sua Cidade" required />
+        </p>
+        <p>
+            <label for = "est" > Estado: </label>
+            <select id = "est" >
+                <option> São Paulo </option>
+                <option> Rio de Janeiro </option>
+                <option> Rio Grande do Sul </option>
+                <option> Paraná </option>
+                <option> Bahia </option>
+                <option> Mato Grosso do Sul</option>
+                <option> Minas Gerais </option>
+                </select>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend> Dados Profissionais </legend>
+        <p><h4> Natureza do Cargo</h4>
+            <input type = "radio" id = "gen" name = "tipo" />
+            <label for = "gen" > Gerência </label>
+            <input type = "radio" id = "fin" name = "tipo" />
+            <label for = "fin" > Finaceiro </label>
+            <input type = "radio" id = "rec" name = "tipo" />
+            <label for = "rec" > Recepção </label>
+            <input type = "radio" id = "adm" name = "tipo" />
+            <label for = "adm" > Administrativo </label>
+            <input type = "radio" id = "jud" name = "tipo" />
+            <label for = "jud" > Juridico </label>
+        </p>
+        <p> <h4> Área de Interesse </h4>
+            <input type = "checkbox" id = "comp" />
+            <label for = "comp" > Computação </label>
+            <input type = "checkbox" id = "bio" />
+            <label for = "bio" > Biologia </label>
+            <input type = "checkbox" id = "bio" />
+            <label for = "ma" > Meio Ambiente </label>
+            <input type = "checkbox" id = "eng" />
+            <label for = "eng" > Engenharia </label>
+            <input type = "checkbox" id = "his" />
+            <label for = "his" > História </label>
+        </p>
+        <p>
+            <label for = "info"> Mini-curriculo: </label>
+            <textarea id = "info" > </textarea>
+        </p>
+    </fieldset>
+
+        <p>
+            <button onclick = "enviar()" > Enviar </button>
+            <script>
+                function enviar(){
+                alert("Dados Enviados com Sucesso")
+                }
+            </script>
+            <input type = "reset" value = " Limpar" />
+        </p>
+
+    </form>
+
+</body>
+</html>

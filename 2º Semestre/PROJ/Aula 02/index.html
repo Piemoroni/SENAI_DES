@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Projeto Mãos Amigas </title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1> Projeto Mãos Amigas </h1>
+        <h3> "Unidos pela coragem, vencemos o silêncio e espalhamos o respeito. Juntos, somos a mudança!" </h3>
+    </header>
+    <section class="cadastro">
+        <div class="novaConta">
+            <h1> Crie Uma Conta: </h1>
+            <p>
+                <label for="Nome"> Nome Completo </label>
+                <input type="text" id="nome" placeholder="Insira seu nome" required />
+                <br>
+            </p>
+            <p>
+                <label for="email"> E-mail escolar </label>
+                <input type="text" id="email" placeholder="Insira seu Email escolar" required />
+                <br>
+            </p>
+            <p>
+                <label for="senha"> Senha </label>
+                <input type="text" id="senha" placeholder="Insira sua senha" required />
+            </p>
+            <p>
+                <label for="unidade"> Unidade escolar </label>
+                <select id="unidade">
+                    <option> SESI CE 356 - SESI Waldyr Beira </option>
+                    <option> SESI CE 001 - SESI Vila Leopoldina </option>
+                    <option> SESI CE 148 - SESI Santo André </option>
+                    <option> SESI CE 024 - SESI Guarulhos </option>
+                    <option> SESI CE 036 - SESI Itaquera </option>
+                    <option> SESI CE 060 - SESI Osasco </option>
+                    <option> SESI CE 083 - SESI São Bernardo do Campo </option>
+                    <option> SESI CE 109 - SESI Mauá </option>
+                    <option> SESI CE 128 - SESI Suzano </option>
+                    <option> SESI CE 155 - SESI Carapicuíba </option>
+                    <option> SESI CE 192 - SESI Barueri </option>
+                </select>
+            </p>
+            <p>
+                <label for="classificacao"> Ocupação </label>
+                <select id="classificacao">
+                    <option> Aluno(a) </option>
+                    <option> Responsável </option>
+                </select>
+            </p>
+
+            <div class = "botaonovaConta">
+            <p>
+                <button onclick="Confirmar()"> <a href = "home.html">Confirmar </a></button>
+                <script>
+                    function Confirmar() {
+                        alert("Dados Confirmados!")
+                    }
+                </script>
+
+                <input type="reset" value="Limpar" />
+            </p>
+            <p>
+                <button onclick="ja_tenho()"> <a href="jatenho.html"> Entrar em conta já existente!!</a> </button>
+            </p>
+        </div>
+        
+        
+
+        </div>
+    </section>
+</body>
+
+</html>

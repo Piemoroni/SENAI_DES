@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    min-height: 100vh;
+    height: fit-content;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: rgb(255, 232, 189);
+    background: linear-gradient(rgb(186, 151, 221), rgb(91, 35, 164));
+    
+    
+}
+
+header {
+    background: #540693;
+    color: #f7e296;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 28px rgb(250, 228, 184);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffe4ab;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #e8c9ff;
+}
+
+section{
+    padding: 2rem;
+    margin: 3rem;
+    background: #540693;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(255, 222, 164);
+}
+
+
+
+.lanterna-uv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto;
+  position: relative;
+  text-align: center;
+}
+
+.lanterna-uv {
+  position: relative;
+  width: 220px;
+  height: 90px;
+  transform: rotate(-6deg);
+}
+
+.lanterna-uv .head {
+  position: absolute;
+  left: -18px;
+  top: 10px;
+  width: 72px;
+  height: 68px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #3a1f64, #1e0b3a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+.lanterna-uv .lens {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.12), rgba(180,100,255,0.05) 60%, rgba(40,10,80,0.6));
+  box-shadow: 0 0 20px 6px rgba(180,120,255,0.25);
+  z-index: 5;
+}
+
+.lanterna-uv .body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 22px;
+  height: 46px;
+  background: linear-gradient(180deg, #20193b, #0d0b18);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.7);
+}
+.lanterna-uv .brand {
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  font-size: 12px;
+  color: #ffd84c;
+  letter-spacing: 0.06em;
+}
+.lanterna-uv .button {
+  position: absolute;
+  right: 14px;
+  top: 26px;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ffd84c, #ffb300);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.3s;
+  box-shadow: 0 0 12px rgba(255,217,102,0.3);
+}
+.lanterna-uv .button:active {
+  transform: scale(0.94);
+}
+
+.lanterna-uv .beam {
+  pointer-events: none;
+  position: absolute;
+  left: 56px;
+  top: -80px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 12% 30%, rgba(170,120,255,0.9) 0%, rgba(120,70,220,0.5) 20%, transparent 50%);
+  filter: blur(14px) saturate(140%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  mix-blend-mode: screen;
+  z-index: 1;
+}
+
+.lanterna-uv-container .floor {
+  width: 100%;
+  height: 120px;
+  background: radial-gradient(ellipse at 50% 20%, rgba(170,120,255,0.15), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.controle-luz {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #30075e;
+  font-size: 14px;
+}
+.controle-luz input[type="range"] {
+  margin-top: 10px;
+  width: 220px;
+  accent-color: #5c0186;
+}
+
+.mensagem-container {
+  position: relative;
+  width: 960px;
+  height: 60px;
+  margin-top: -200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.mensagem-uv {
+  font-size: 18px;
+  color: transparent;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  white-space: nowrap;
+}
+
+@keyframes pulsar {
+  0%, 100% { text-shadow: 0 0 12px rgba(200,150,255,0.8); }
+  50% { text-shadow: 0 0 25px rgba(200,150,255,1); }
+}

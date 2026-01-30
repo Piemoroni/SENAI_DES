@@ -1,0 +1,16 @@
+{
+    "nome": "Fulano",
+    "documento": "12345678",
+    "endereco": "Rua da Saudade",
+    "idade": 50,
+    "habilitado": true,
+    "telefones": ["019145979" , "455998785" , "545465121"]
+},
+{
+    "dia":"",
+    "nome": "",
+    "esporte": ""
+},
+{
+
+}

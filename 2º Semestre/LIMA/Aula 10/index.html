@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Loja Ballet </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+     
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img width="50" id="logo" src="./assets/logo7.png" alt="">
+        <ul>
+            <li><input type="text" id="busca"></li>
+            <li>Home</li>
+            <li>Sobre Nós</li>
+            <li>Contato</li>
+        </ul>
+        <i id="btn-menu" class="fa-solid fa-bars fa-2xl"></i>
+    </header>
+    <div class="container">
+        <nav id="menu-lateral">
+            <ul>
+                <li>Categorias</li>
+                <li>Promoções</li>
+                <li>Lançamentos</li>
+                <li>Carrinho</li>
+            </ul>
+        </nav>
+        <form action= "">
+            <label for = "categoria"> Categoria </label>
+            <select name = "categoria" id = "categoria">
+                <option value = "0" selected> Selecione uma Categoria </option>
+                <option value = "1"> Sapatilha de Ponta </option>
+                <option value= "7"> Acessórios Para Pontas </option>
+                <option value = "2"> Sapatilha Meia Ponta </option>
+                <option value = "3"> Ponteiras </option>
+                <option value = "4"> Collants </option>
+                <option value= "5"> Polainas </option>
+                <option value= "6"> Botinhas de Aquecimento </option>
+                <option value= "8"> Bolsas </option>
+                <option value= "9"> Tutus </option>
+            </select>
+            <label for = "valor"> Valor Máximo <span id = "spVal"> R$ 0 </span></label>
+            <input type = "range" name = "valor" id = "valor" value = "0" min = "0" step = "1">
+            <button id = "filtrar"> Filtrar </button>
+        </form>
+        <main>
+            <div class="box">
+                <img src="https://acdn-us.mitiendanube.com/stores/001/335/424/products/imagem31-e1bc34f9b966d27fa716874599404601-1024-1024.webp" alt="">
+                <div class="info">
+                    <p class = "nome"> Ponta - Tosheizinha</p>
+                    <p class = "valor"> 329.90 </p>
+                    <p class = "categoria" hidden> 1 </p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+
+</html>

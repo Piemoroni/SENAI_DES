@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 03 </title>
+</head>
+<body>
+    <center> <h1> Lanchonete do Seu Zé </h1> 
+    <hr>
+    <br>
+    <h3> Monte Seu Lanche! </h3>
+    </center>
+    <form action = "" method = "">
+        <p1>
+            <label for = "nome" > Nome Completo </label>
+            <input id = "nome" type = "text" placeholder= "Insira Seu Nome" required />
+        </p>
+        <p>
+            <label for = "datanasc" > Data de Nasciemnto </label>
+            <input id = "datanasc" type = "date" />
+        </p>
+        <p>
+            <label for = "indica" > Você Nos Indicaria ? </label>
+            <input id = "indica" type = "number" min = "1" max = "5" />
+        </p>
+        <p>
+            <label for = "email" > E-mail </label>
+            <input id = "email" type = "email" placeholder = "Insira Seu Email" required />
+        </p>
+        <p>
+            <label for = "cor" > Cor favorita </label>
+            <input id = "cor" type = "color" />
+        </p>
+        <p>
+            <label for = "volume" > Em Qual Volume Você Ouve Música (0 a 100) </label>
+            <input id = "volume" type = "range" min = "0" max = "100" value = "50" oninput = "valorVolume.textContent = this.value" />
+            <spam id = "valorVolume" > 50 </spam>
+
+            <style>
+                #volume {
+
+                    accent-color: rgba(209, 55, 170, 0.693);
+                }
+            </style>
+        </p>
+        <fieldset>
+            <legend> Escolha Seu Gênero </legend>
+            <input type = "radio" id = "masc" name = "genero" />
+            <label for = "masc" > Masculino </label>
+            <input type = "radio" id = "fem" name = "genero" />
+            <label for = "fem" > Feminino </label>
+            <input type = "radio" id = "outros" name = "genero" />
+            <label for = "outros" > Outros </label>
+
+             <style>
+                #masc {
+                    accent-color: rgb(23, 132, 142);
+                }
+                #fem {
+                    accent-color: rgba(209, 55, 170, 0.639);
+                }
+                #outros {
+                    accent-color: rgb(179, 231, 179); 
+                }
+            </style>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend> Monte Seu Lanche </legend>
+                <input type = "checkbox" id = "sal" />
+                <label for = "sal" > Salada (alface e tomate) </label>
+                <input type = "checkbox" id = "hamb" />
+                <label for = "hamb" > Hamburger </label>
+                <input type = "checkbox" id = "quei" />
+                <label for = "quei" > Queijo </label>
+                <input type = "checkbox" id = "cel" />
+                <label for = "cel" > Cebola </label>
+                <input type = "checkbox" id = "pic" />
+                <label for = "pic" > Picles </label>
+                <input type = "checkbox" id = "ovo" />
+                <label for = "ovo" > Ovo </label>
+
+                <style>
+                #sal{
+                    accent-color: rgb(179,231,179);
+                }
+                #hamb{
+                    accent-color: rgb(99, 46, 46);
+                }
+                #quei {
+                    accent-color: rgb(247, 176, 100);
+                }
+                #cel {
+                    accent-color: rgb(221, 74, 221);
+                }
+                #pic{
+                    accent-color: rgb(27, 212, 27);
+                }
+                #ovo{
+                    accent-color: rgb(233, 233, 171);
+                }
+            </style>
+            </fieldset>
+            <fieldset>
+                <legend> Escolha Sua Bebida </legend>
+                <input type = "radio" id = "agua" name = "tipo" />
+                <label for = "agua" > Água Mineral </label>
+                <img src = "https://cdn.awsli.com.br/300x300/446/446822/produto/231083650/shopping---2023-08-28t130846-088-b17cy747kz.jpg">
+                <input type = "radio" id = "suco" name = "tipo" />
+                <label for = "suco" > Sucos Naturais </label>
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi1vMdv8ogAMk9ACejWu9AkR_paMdyo9NkzA&s">
+                <input type = "radio" id = "ref" name = "tipo" />
+                <label for = "ref">  Refrigerante </label> 
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_IEIiFt59xgU9Kwfh1pReNXuVOXYhPLbdYQ&s" >
+            </fieldset>
+
+            <p>
+            <label for = "info"> Informações Adicionais </label>
+            <textarea id = "info" > </textarea>
+            </p>
+            <p>
+                <label for = "cidade" > Informe a Cidade </label>
+                <select id = "Cidade" >
+                    <option> Jaguariúna </option>
+                    <option> Amparo </option>
+                    <option> Pirassununga </option>
+                    <option> Pedreira </option>
+                    <option> Monte Alegra de Sul </option>
+                    <option> Mostarda </option>
+                    <option> Itapira </option>
+                </select>
+            </p>
+            <p>
+               <input type = "reset" value = " Limpar Form" />
+               <button onclick = "enviar()" > Enviar </button>
+            <script>
+                function enviar(){
+                    alert("Dados Enviados com Sucesso")
+                }
+                </script>
+            </p>
+    </form>
+    
+</body>
+</html>

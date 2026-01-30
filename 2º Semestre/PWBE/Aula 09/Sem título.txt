@@ -1,0 +1,44 @@
+DROP DATABASE IF EXISTS clinica;
+CREATE DATABASE clinica;
+USE clinica;
+
+CREATE TABLE pacientes(
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL, 
+    telefone VARCHAR(300),
+    data_nascimento DATE,
+    cpf VARCHAR(15),
+    email VARCHAR(100)
+);
+
+CREATE TABLE medicos(
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL, 
+    email VARCHAR(300),
+    data_nascimento DATE,
+    cpf VARCHAR(15),
+    especialidade VARCHAR(100)
+);
+
+CREATE TABLE funcionários (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL, 
+    email VARCHAR(300),
+    data_nascimento DATE,
+    cargo VARCHAR(100)
+);
+
+CREATE TABLE consultas (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY,
+  nome_paciente VARCHAR(100),
+  telefone_paciente VARCHAR(300),
+  nome_medico VARCHAR(100),
+  especialidade_medico VARCHAR(100),
+  data DATE,
+  hora TIME,
+  status VARCHAR(100),
+  FOREIGN KEY (nome_paciente) REFERENCES pacientes(nome),
+  FOREIGN KEY (telefone_paciente) REFERENCES pacientes(telefone),
+  FOREIGN KEY (nome_medico) REFERENCES medicos(nome),
+  FOREIGN KEY (especialidade_medico) REFERENCES medicos(especialidade),
+);

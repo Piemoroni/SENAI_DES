@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clube do Bigode</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1> Clube do Bigode </h1>
+        <h3> Sua autoestima melhorada!</h3>
+        <img src="download.png" class="img">
+        <h4> Buscar Cliente: </h4>
+        <li><input type="text" id="busca"> </li>
+    </header>
+
+    <div class="conteiner">
+        <nav id="menu-lateral">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="tabela-conteiner">
+                <div class="info">
+                    <h2>Consultas Registradas</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Cliente</th>
+                                <th>Barbeiro</th>
+                                <th>Serviço</th>
+                                <th>Data</th>
+                                <th>Hora</th>
+                                <th>Status</th>
+                                <th>Descrição</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="modelo">
+                                <td class="id">1</td>
+                                <td class="cliente">Murilo Chiarello</td>
+                                <td class="barbeiro">Thomas Fantini</td>
+                                <td class="servico"> Corte de Cabelo </td>
+                                <td class="data"> 2025/11/26</td>
+                                <td class="hora">14:30</td>
+                                <td class="status">Agendada</td>
+                                <td class="descricao"> Estilo Mullet </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

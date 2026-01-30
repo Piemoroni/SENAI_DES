@@ -1,0 +1,68 @@
+28. Sistema de Barbearia
+
+• Situação-problema: Uma barbearia moderna quer agendar os horários de 
+seus clientes com os barbeiros da casa.
+
+• Ela precisa registrar:
+o Os clientes.
+o Os barbeiros.
+o Os serviços (corte, barba, etc.) e seus preços.
+o Os agendamentos, ligando cliente, barbeiro, serviço e data/hora.
+
+
+-Identificar quais são as entidades principais. - FEITO
+-Identificar quais atributos cada entidade deve ter. - FEITO
+-Entender como as entidades se relacionam entre si. - FEITO
+-Criar o dicionário de dados. - FEITO
+-Criar um DER (Diagrama Entidade-Relacionamento). - FEITO
+-Identificar corretamente as chaves primárias e estrangeiras: - FEITO
+-Criar um script SQL contendo: - FEITO
+-Criação das tabelas. - FEITO
+-Inserções de registros. - FEITO
+-E consultas dos relatórios. - FEITO
+
+• E visualizar os seguintes relatórios: - FEITO
+o A agenda de um barbeiro para um dia específico.-FEITO
+o O histórico de serviços de um cliente. -FEITO
+o O faturamento total de cada barbeiro em um mês. -FEITO
+o Qual o serviço mais popular (mais agendado). -FEITO
+
+
+-Entidades principais: 
+~Clientes 
+~Barbeiros
+~Serviços
+~Agendamentos
+
+-Clientes:
+~Id
+~Nome
+~Data de Nascimento
+~Email
+
+-Barbeiros:
+~Id
+~Nome
+~Data de Nascimento
+~Email
+~CPF
+
+-Serviços:
+~Id
+~Descrição
+~Preço
+
+-Agendamentos:
+~Id
+~Id_cliente
+~Id_barbeiro
+~Id_serviço
+~Data/ hora
+
+-Relacionamento:
+~Clientes se relacionam com agendamentos (Agendam, 1:N)
+~Barbeiros se relacionam com agendamentos (Realizam, 1:N)
+~Serviços se relacionam com agendamentos (Especificam, 1:1)
+
+
+

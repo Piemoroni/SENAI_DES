@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", Helvetica, sans-serif;
+}
+
+body { 
+    width: 100vw;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    background-color: #fefbdf00;
+}
+
+header{
+    background-color: rgb(122, 38, 38);
+    color:rgb(254, 253, 253);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 8px 16px #9d040461;
+}
+
+.img{
+    align-content: center;
+    width: 150px;
+    height: 100;
+}
+
+.conteiner {
+    display: flex;
+    width: 100vw;
+}
+
+nav {
+    width: 150px;
+    height: 90vh;
+    background-color: rgb(122, 38, 38);
+    border-top: 4px solid #c56060f4;
+}
+
+nav ul li {
+    width: 150px;
+    padding: 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(254, 253, 253);
+}
+
+nav ul li a:hover {
+    background-color: rgb(254, 253, 253);
+    color: rgb(122, 38, 38);
+}
+
+.tabela-conteiner {
+    width: 800px;
+    height: 350px;
+    background: rgb(122, 38, 38);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px #9d040461;
+    transition: transform 0.3 ease;
+}
+
+.tabela-conteiner h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(254, 253, 253);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #641818f5;
+    color: rgb(254, 253, 253);
+}
+
+thead {
+    padding: 30px;
+    text-align: left;
+    font-size: 16px;
+}
+
+tbody{
+    background-color: #f9a9a9f4;
+    color: #01000b;    
+}
+
+tbody td {
+    padding: 12px 14px;
+    font-size: 15px;
+}
+
+tbody tr:nth-child(1){ background-color: #f9a9a9f4;}
+tbody tr:nth-child(2){ background-color: #c56060f4;}
+tbody tr:nth-child(3){ background-color: #f9a9a9f4;}
+tbody tr:nth-child(4){ background-color: #c56060f4;}
+tbody tr:nth-child(5){ background-color: #f9a9a9f4;}
+
+button{
+    background-color: rgb(122, 38, 38);
+    color: #c56060f4;
+    height: 50px;
+    width: 80px;
+    border-radius: 5px;
+    align-items: center,;
+}
+
+main {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu-lateral {
+    width: 15%;
+}
+
+.cadastro  {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.cadastro .novaConta{
+    padding: 2rem;
+    margin: 1rem;
+    background: rgb(122, 38, 38);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    height: 350px;
+    width: 450px ;
+}
+
+.cadastro .novaConta h1{
+    color: #c56060f4;
+    text-align: center;
+}
+
+.cadastro .novaConta {
+    color: #c56060f4;
+}
+
+.botaonovaConta{
+    text-align: center;
+    text-decoration: none;
+    place-items: center;
+    align-self: center;
+    justify-content: center;
+    color: rgb(122, 38, 38)
+}
+
+.botaonovaConta a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(122, 38, 38);
+}
+
+.botaonovaConta:hover{
+    color: rgb(122, 38, 38);
+}
+
+button{
+    width: 200px;
+    height: 20px;
+    background-color: rgb(215, 107, 107);
+    color: rgb(122, 38, 38);
+}
+
+.limpar{
+    width: 200px;
+    height: 20px;
+    background-color: rgb(215, 107, 107);
+    color: rgb(122, 38, 38);
+}
+
+.novaConta{
+    background-color: rgb(226, 167, 167);
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.novaConta h1{
+    color: rgb(122, 38, 38);
+}
+
+.novaConta p{
+    color: rgb(122, 38, 38);
+}
+
+.novaConta input{
+    background-color:rgb(215, 107, 107);
+    color: rgb(122, 38, 38);
+}
+
+footer{
+    background: #fdfcfb;
+    color: rgb(122, 38, 38);
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+

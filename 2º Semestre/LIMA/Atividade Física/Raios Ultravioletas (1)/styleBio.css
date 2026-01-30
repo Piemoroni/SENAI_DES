@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    min-height: 100vh;
+    height: fit-content;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: rgb(255, 232, 189);
+    background-image: linear-gradient(rgb(186, 151, 221), rgb(91, 35, 164));
+}
+
+header {
+    background: #540693;
+    color: #f7e296;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 28px rgb(250, 228, 184);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffde96;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #e8c9ff;
+}
+
+section{
+    padding: 2rem;
+    margin: 3rem;
+    background: #540693;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgb(255, 222, 164);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 0%;
+    object-fit: cover;
+    border: 2px solid #ffde96;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+}
+
+.card {
+    background: linear-gradient(to right, #6911b1,#6e3999, #8c62ad);
+    border-radius: 8px;
+    padding: 1rem;
+    height: 50vh;
+    width: 100vw;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffde96;
+    box-shadow: 0 4px 8px rgb(255, 222, 164);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgb(255, 222, 164);
+}
+
+.vida-e-formacao{
+    display: flex;
+    flex-direction: row;
+
+}
+.nome{
+    margin-left: 20px;
+}

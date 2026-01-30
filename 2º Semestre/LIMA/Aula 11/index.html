@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Help Tech </title>
+</head>
+<body>
+    <header>
+        <h1> Loja Help Tech!! </h1>
+        <h3> Seja muito bem vindo(a)!</h3>
+    </header>
+    <select name ="andamento" id = "andamento">
+        <option value = "0" selected> Selecione um Status </option>
+        <option value = "aberto"> Aberto </option>
+        <option value= "Em Andamento"> Em Andamento </option>
+        <option value = "Resolvido"> Resolvido </option>
+    </select>
+    <button id = "buscar"> Buscar </button>
+    <table>
+    <thead>
+        <tr> 
+            <th> ID</th>
+            <th> Titulo </th>
+            <th> Solicitante </th>
+            <th> Prioridade </th>
+            <th> Status </th>
+            <th> Data </th>
+        </tr>
+    </thead>
+    <tbody class = "main">
+        <tr class= "atendimento"> 
+            <td class = "id"> 1 </td>
+            <td class = "titulo"> Erro ao gerar relatório financeiro </td>
+            <td class = "nome"> Ana Souza </td>
+            <td class = "prioridade"> Alta </td>
+            <td class = "status"> Aberto </td>
+            <td class = "numero" hidden> 1 </td>
+            <td class = "data"> 2025-10-20 </td>
+        </tr>
+    </tbody>
+    </table>
+    <footer>
+    <p> &copy, 2025 Tech Solution </p>
+    <p> Made with </p>
+    </footer>
+
+    
+</body>
+<script src="script.js"></script>
+</html>

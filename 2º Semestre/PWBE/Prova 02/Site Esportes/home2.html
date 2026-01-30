@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locações Esportivas - SESI</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<header>
+    <h1> Locações Esportivas - SESI <i class="fa-solid fa-person-walking fa-flip" style="color: #ffffff;"></i> </h1>
+    <h3> Pratique Esportes!!!</h3>
+    <img src = "https://upload.wikimedia.org/wikipedia/commons/2/20/Logo_SESI_vermelho.jpg" alt = "Logo SESI" class="img">
+</header>
+<body>
+    <div class="conteiner">
+        <nav id="menu-lateral">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href = "home.html"> Equipamentos </a></li>
+                <li><a href = "home2.html"> Alunos </a></li>
+                <li><a href = "home3.html"> Locações </a></li>
+            </ul>
+        </nav>
+        <div class="novaConta">
+            <h1> Insira um Aluno: </h1>
+            <p>
+                <label for="Nome"> Nome: </label>
+                <input type="text" id="nome" placeholder="Insira o nome" required />
+                <br>
+            </p>
+            <p>
+                <label for="turma"> Truma: </label>
+                <input type="text" id="turma" placeholder="Insira a Turma" required />
+                <br>
+            </p>
+            <p>
+                <label for="idade"> Idade: </label>
+                <input type="text" id="idade" placeholder="Insira a Idade" required />
+                <br>
+            </p>
+            <br>
+            <div class = "botaonovaConta">
+                <button onclick="Confirmar()"> Confirmar </button>
+                <script>
+                    function Confirmar() {
+                        alert("Aluno Cadastrado!")
+                    }
+                </script>
+                <br>
+            </div>
+        </div>
+        <main>
+            <div class="tabela-conteiner">
+                <div class="info">
+                    <h2>Alunos Registrados</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nome</th>
+                                <th>Truma</th>
+                                <th>Idade</th>
+                                <th>Quantidade de Locações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="dados">
+                                <td class="id"> 1   </td>
+                                <td class="nome"> Pietra Moroni </td>
+                                <td class="turma"> 2º EM B </td>
+                                <td class="idade"> 16 Anos </td>
+                                <td class="quantidadeLoc"> 5 </td>
+                            </tr>
+                            <tr id="dados">
+                                <td class="id"> 2 </td>
+                                <td class="nome"> João Lucas Ribeiro Leite </td>
+                                <td class="turma"> 3º EM A </td>
+                                <td class="idade"> 18 Anos </td>
+                                <td class="quantidadeLoc"> 15 </td>
+                            </tr>
+                            <tr id="dados">
+                                <td class="id"> 3 </td>
+                                <td class="nome"> Pedro Antonio Moroni </td>
+                                <td class="turma"> 7º EF2 A </td>
+                                <td class="idade"> 12 Anos </td>
+                                <td class="quantidadeLoc"> 23 </td>
+                            </tr>
+                            <tr id="dados">
+                                <td class="id"> 4 </td>
+                                <td class="nome"> Robson Souza </td>
+                                <td class="turma"> 2º EM B </td>
+                                <td class="idade"> ? Anos </td>
+                                <td class="quantidadeLoc"> 2 </td>
+                            </tr>
+                            <tr id="dados">
+                                <td class="id"> 5 </td>
+                                <td class="nome"> Reenye Lima </td>
+                                <td class="turma"> 3º EM B </td>
+                                <td class="idade"> ? Anos </td>
+                                <td class="quantidadeLoc"> 33 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p> Made With <i class="fa-solid fa-heart fa-beat" style="color: #d02525;"></i> By Pietra Moroni</p>
+    </footer>
+</body>
+</html>
